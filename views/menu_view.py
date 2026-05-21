@@ -1,6 +1,6 @@
 import arcade
 from arcade import View
-from utils.constants import SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE
+from utils.constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from views.game_view import GameView
 
 

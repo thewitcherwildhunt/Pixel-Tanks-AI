@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/entities/bullet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/game_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/menu_view.py" afterDir="false" />
+    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="feat: добавил заглушки меню и игрового экрана">
+      <change afterPath="$PROJECT_DIR$/entities/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/bullet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/game_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/game_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
     "Python.constants.executor": "Run",
     "Python.main.executor": "Run",
     "Python.menu_view.executor": "Run",
+    "Python.player.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -115,9 +115,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="player" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pixel Tanks AI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/entities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/entities/player.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.player" />
         <item itemvalue="Python.menu_view" />
         <item itemvalue="Python.constants" />
       </list>
@@ -154,11 +178,20 @@
       <option name="project" value="LOCAL" />
       <updated>1779308410122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: добавил заглушки меню и игрового экрана">
+      <option name="closed" value="true" />
+      <created>1779369597110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779369597110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="feat: добавил заглушки меню и игрового экрана" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавил заглушки меню и игрового экрана" />
   </component>
 </project>
