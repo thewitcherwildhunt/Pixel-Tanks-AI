@@ -1,5 +1,5 @@
 import arcade
-from entities.player import Player
+from entities import BaseTank, PlayerController, SimpleAIController
 
 
 class GameView(arcade.View):
@@ -8,34 +8,49 @@ class GameView(arcade.View):
 
     def on_show_view(self) -> None:
         arcade.set_background_color(arcade.color.GREEN)
-        self.player = Player()
+        self.all_tanks = arcade.SpriteList()
+        self.player = BaseTank(PlayerController())
+        self.all_tanks.append(self.player)
+        self.all_tanks.append(BaseTank(SimpleAIController()))
         self.bullets = arcade.SpriteList()
 
     def on_draw(self):
         self.clear()
-        arcade.draw_sprite(self.player)
+        self.all_tanks.draw()
         self.bullets.draw()
 
     def on_key_press(self, symbol: int, modifiers: int) -> bool | None:
-        if symbol == arcade.key.W:
-            self.player.change_y += self.player.speed
-            self.player.direction = "W"
-        elif symbol == arcade.key.S:
-            self.player.change_y -= self.player.speed
-            self.player.direction = "S"
-        elif symbol == arcade.key.A:
-            self.player.change_x -= self.player.speed
-            self.player.direction = "A"
-        elif symbol == arcade.key.D:
-            self.player.change_x += self.player.speed
-            self.player.direction = "D"
-        if symbol == arcade.key.SPACE:
-            self.bullets.append(self.player.shoot())
+        self.player.controller.on_key_press(symbol, modifiers)
 
     def on_key_release(self, symbol: int, modifiers: int) -> None:
-        self.player.change_x = 0
-        self.player.change_y = 0
+        self.player.controller.on_key_release(symbol, modifiers)
 
     def on_update(self, delta_time: float) -> bool | None:
-        self.player.update()
+        game_state = None
+        for tank in self.all_tanks:
+            actions = tank.controller.get_actions(game_state)
+            for action in actions:
+                if action == "SHOOT":
+                    bullet = tank.shoot()
+                    self.bullets.append(bullet)
+                elif action == "W":
+                    tank.change_y = tank.speed
+                    tank.change_x = 0
+                    tank.direction = "W"
+                elif action == "S":
+                    tank.change_y = -tank.speed
+                    tank.change_x = 0
+                    tank.direction = "S"
+                elif action == "A":
+                    tank.change_x = -tank.speed
+                    tank.change_y = 0
+                    tank.direction = "A"
+                elif action == "D":
+                    tank.change_x = tank.speed
+                    tank.change_y = 0
+                    tank.direction = "D"
+                elif action == "STOP":
+                    tank.change_x = 0
+                    tank.change_y = 0
+        self.all_tanks.update()
         self.bullets.update()
