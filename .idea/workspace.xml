@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="feat: добавлены заглушки окон game over, и win, коллизии пуля-танк" />
+    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="fix: исправлено отображение победного экрана при проигрыше">
+      <change afterPath="$PROJECT_DIR$/utils/game_state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/controllers/ai_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/controllers/ai_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/tanks/base_tank.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/tanks/base_tank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/game_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/game_view.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779451849529</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: исправлено отображение победного экрана при проигрыше">
+      <option name="closed" value="true" />
+      <created>1779452156655</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1779452156655</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,6 +253,7 @@
     <MESSAGE value="feat: заглушки: Player, Bullet, реализация GameView" />
     <MESSAGE value="feat: добавлены классы танков и контроллеров, переработана архитектура" />
     <MESSAGE value="feat: добавлены заглушки окон game over, и win, коллизии пуля-танк" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: добавлены заглушки окон game over, и win, коллизии пуля-танк" />
+    <MESSAGE value="fix: исправлено отображение победного экрана при проигрыше" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: исправлено отображение победного экрана при проигрыше" />
   </component>
 </project>

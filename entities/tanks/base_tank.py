@@ -1,14 +1,14 @@
 import arcade
 from entities import BaseBullet
 class BaseTank(arcade.Sprite):
-    def __init__(self, controller):
+    def __init__(self, controller, x, y):
         super().__init__()
-        self.center_x = 100
-        self.center_y = 100
+        self.center_x = x
+        self.center_y = y
         self.speed = 5
         self.direction = "W"
         self.controller = controller
-        self.texture = arcade.make_circle_texture(32, arcade.color.RED)
+        self.texture = arcade.load_texture("assets/images/tanks/tank_bigRed.png")
     def shoot(self):
         bullet = BaseBullet(self.center_x, self.center_y, self)
         if self.direction == "W":
