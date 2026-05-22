@@ -10,7 +10,7 @@ class BaseTank(arcade.Sprite):
         self.controller = controller
         self.texture = arcade.make_circle_texture(32, arcade.color.RED)
     def shoot(self):
-        bullet = BaseBullet(self.center_x, self.center_y)
+        bullet = BaseBullet(self.center_x, self.center_y, self)
         if self.direction == "W":
             bullet.change_y = bullet.speed
         elif self.direction == "S":
