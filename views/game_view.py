@@ -69,5 +69,5 @@ class GameView(arcade.View):
                 tank.remove_from_sprite_lists()
                 if tank == self.player:
                     self.window.show_view(GameOverView())
-        if len(self.all_tanks) == 1:
+        if len(self.all_tanks) == 1 and self.all_tanks[0] == self.player:
             self.window.show_view(WinView())
