@@ -4,6 +4,6 @@ class BaseBullet(arcade.Sprite):
         super().__init__()
         self.center_x = x
         self.center_y = y
-        self.speed = 8
+        self.speed = 20
         self.owner = owner
-        self.texture = arcade.make_circle_texture(8, arcade.color.WHITE)
+        self.texture = arcade.load_texture('assets/images/bullets/bullet.png')

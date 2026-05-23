@@ -37,28 +37,29 @@ class GameView(arcade.View):
         for tank in self.all_tanks:
             actions = tank.controller.get_actions(game_state)
             for action in actions:  # потом переделать красиво
-                if action == "SHOOT":
-                    bullet = tank.shoot()
-                    self.bullets.append(bullet)
-                elif action == "W":
-                    tank.change_y = tank.speed
-                    tank.change_x = 0
-                    tank.direction = "W"
-                elif action == "S":
-                    tank.change_y = -tank.speed
-                    tank.change_x = 0
-                    tank.direction = "S"
-                elif action == "A":
-                    tank.change_x = -tank.speed
-                    tank.change_y = 0
-                    tank.direction = "A"
-                elif action == "D":
-                    tank.change_x = tank.speed
-                    tank.change_y = 0
-                    tank.direction = "D"
-                elif action == "STOP":
-                    tank.change_x = 0
-                    tank.change_y = 0
+                match action:
+                    case "SHOOT":
+                        bullet = tank.shoot()
+                        self.bullets.append(bullet)
+                    case  "W":
+                        tank.change_y = tank.speed
+                        tank.change_x = 0
+                        tank.direction = "W"
+                    case "S":
+                        tank.change_y = -tank.speed
+                        tank.change_x = 0
+                        tank.direction = "S"
+                    case "A":
+                        tank.change_x = -tank.speed
+                        tank.change_y = 0
+                        tank.direction = "A"
+                    case "D":
+                        tank.change_x = tank.speed
+                        tank.change_y = 0
+                        tank.direction = "D"
+                    case "STOP":
+                        tank.change_x = 0
+                        tank.change_y = 0
         for _ in range(5 - len(self.all_tanks)):
             self.all_tanks.append(BaseTank(SimpleAIController(), randint(300, 500), randint(200, 800)))
         self.all_tanks.update()
