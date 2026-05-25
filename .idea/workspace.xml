@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="feat: поворот танков" />
+    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="feat: поворот пуль" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779736353317</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: поворот пуль">
+      <option name="closed" value="true" />
+      <created>1779736638911</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1779736638911</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -291,6 +299,7 @@
     <MESSAGE value="refactor: if -&gt; match/case в gameview" />
     <MESSAGE value="feat: окно главного меню" />
     <MESSAGE value="feat: поворот танков" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: поворот танков" />
+    <MESSAGE value="feat: поворот пуль" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: поворот пуль" />
   </component>
 </project>
