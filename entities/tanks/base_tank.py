@@ -13,10 +13,14 @@ class BaseTank(arcade.Sprite):
         bullet = BaseBullet(self.center_x, self.center_y, self)
         if self.direction == "W":
             bullet.change_y = bullet.speed
+            bullet.angle = 0
         elif self.direction == "S":
             bullet.change_y = -bullet.speed
+            bullet.angle = 180
         elif self.direction == "D":
             bullet.change_x = bullet.speed
+            bullet.angle = 90
         elif self.direction == "A":
             bullet.change_x = -bullet.speed
+            bullet.angle = 270
         return bullet
