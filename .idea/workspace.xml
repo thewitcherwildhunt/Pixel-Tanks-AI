@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="feat: бот с рандомными действиями и заглушка геймплея">
+    <list default="true" id="830a9661-0e86-4609-8bbb-241baeaf9015" name="Changes" comment="refactor: if -&gt; match/case в gameview">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/tanks/tank_bigRed.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/tanks/tank_bigRed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/bullets/base_bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/bullets/base_bullet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,9 +163,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.menu_view" />
         <item itemvalue="Python.game_view" />
         <item itemvalue="Python.player" />
-        <item itemvalue="Python.menu_view" />
         <item itemvalue="Python.constants" />
       </list>
     </recent_temporary>
@@ -257,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779455750188</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor: if -&gt; match/case в gameview">
+      <option name="closed" value="true" />
+      <created>1779561222342</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1779561222342</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -268,6 +276,7 @@
     <MESSAGE value="feat: добавлены заглушки окон game over, и win, коллизии пуля-танк" />
     <MESSAGE value="fix: исправлено отображение победного экрана при проигрыше" />
     <MESSAGE value="feat: бот с рандомными действиями и заглушка геймплея" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: бот с рандомными действиями и заглушка геймплея" />
+    <MESSAGE value="refactor: if -&gt; match/case в gameview" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: if -&gt; match/case в gameview" />
   </component>
 </project>
