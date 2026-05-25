@@ -45,18 +45,22 @@ class GameView(arcade.View):
                         tank.change_y = tank.speed
                         tank.change_x = 0
                         tank.direction = "W"
+                        tank.angle = 0
                     case "S":
                         tank.change_y = -tank.speed
                         tank.change_x = 0
                         tank.direction = "S"
+                        tank.angle = 180
                     case "A":
                         tank.change_x = -tank.speed
                         tank.change_y = 0
                         tank.direction = "A"
+                        tank.angle = 270
                     case "D":
                         tank.change_x = tank.speed
                         tank.change_y = 0
                         tank.direction = "D"
+                        tank.angle = 90
                     case "STOP":
                         tank.change_x = 0
                         tank.change_y = 0
